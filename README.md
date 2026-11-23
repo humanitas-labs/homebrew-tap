@@ -3,8 +3,12 @@
 Casks for Humanitas Labs apps.
 
 ```sh
-brew install --cask humanitas-labs/tap/sirius
+brew tap humanitas-labs/tap
+brew trust humanitas-labs/tap
+brew install --cask sirius
 ```
+
+Homebrew loads casks from a tap outside its own only once you trust it; `brew trust` is that step.
 
 | Cask | App |
 |---|---|
